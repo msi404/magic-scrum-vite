@@ -60,7 +60,7 @@ export const TaskBoard = () => {
 	const [activeTask, setActiveTask] = useState<Task | null>(null)
 
 	// edit task dailog and logic
-	const { setOpen: setEditDialogOpen } = useEditTask({
+	const { setOpen: setEditDialogOpen, EditTaskDialog } = useEditTask({
 		task: editingTask,
 		button: null
 	})
@@ -177,7 +177,7 @@ export const TaskBoard = () => {
 				</DragOverlay>
 			</DndContext>
 			<Show when={editingTask !== null}>
-				<EditTask />
+				<EditTaskDialog />
 			</Show>
 		</div>
 	)
