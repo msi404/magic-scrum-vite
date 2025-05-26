@@ -1,17 +1,15 @@
-import type { ReactNode, FC } from 'react';
+import type { ReactNode, FC } from 'react'
 import { Provider } from 'react-redux'
 import { DirectionProvider } from '@radix-ui/react-direction'
 // import { ThemeProvider } from 'next-themes'
-import { store } from '@/shared/lib/store';
+import { store } from '@/shared/lib/store'
 
-export const Providers: FC<{children: ReactNode}> = ({ children }) => {
+export const Providers: FC<{ children: ReactNode }> = ({ children }) => {
 	return (
 		<Provider store={store}>
 			{/* <ThemeProvider attribute="class" enableSystem> */}
-				<DirectionProvider dir='rtl'>
-					{children}
-				</DirectionProvider>
+			<DirectionProvider dir="rtl">{children}</DirectionProvider>
 			{/* </ThemeProvider> */}
 		</Provider>
-	);
+	)
 }
