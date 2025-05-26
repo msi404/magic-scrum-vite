@@ -1,54 +1,91 @@
-# React + TypeScript + Vite
+# 🪄 Magic Scrum
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Magic Scrum** is a modern, web-based Scrum management application designed to be fast, clean, and developer-friendly. Built with cutting-edge tools and thoughtful architecture, it delivers a smooth project planning experience — with just a hint of magic. ✨
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## Expanding the ESLint configuration
+* 🧩 **Drag & Drop** board powered by `dnd-kit`
+* ⚡ **Redux Toolkit + Redux Query** for efficient state and data management
+* 🎨 **Tailwind CSS** for sleek, responsive UI
+* 🧱 **Feature-Sliced Design (FSD)** for scalable, modular architecture
+* 🧼 **Clean Code** principles throughout
+* 🔁 **CRUD operations** with *nearly* **Optimistic UI** updates
+* 🎭 **Framer Motion** animations for a delightful UX
+* 🔧 **React + Vite** for fast and flexible package
+* 🛡️ **Husky + Commitlint** to enforce conventional commits and protect code quality
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## 🏗️ Tech Stack
+
+| Tool             | Purpose                          |
+| ---------------- | -------------------------------- |
+| `React`          | UI Framework                     |
+| `Redux Toolkit`  | State management                 |
+| `RTK Query`      | Data fetching & caching          |
+| `dnd-kit`        | Drag & drop functionality        |
+| `Tailwind CSS`   | Utility-first styling            |
+| `Framer Motion`  | UI animations                    |
+| `FSD`            | Scalable project structure       |
+| `Husky`          | Git hooks for safe commits       |
+| `Commitlint`     | Enforces conventional commits    |
+
+---
+
+## 🔧 Development
+
+### 🛠️ Install Dependencies
+
+```bash
+npm install
+````
+
+### 🚀 Run Locally
+
+```bash
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### 🔐 Git Hooks Setup
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+We use **Husky** with **Commitlint** to ensure all commits follow the [Conventional Commits](https://www.conventionalcommits.org/) format.
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+To enable hooks after cloning the repo:
+
+```bash
+npm run prepare
 ```
+
+This sets up Husky and activates `commit-msg` hooks.
+
+---
+
+## 🧪 Todo / Improvements
+
+* [ ] Full optimistic updates for CRUD
+* [ ] Role-based access control (RBAC)
+* [ ] Unit + E2E tests
+* [ ] Realtime sync with WebSocket
+
+---
+
+## 🤝 Contributing
+
+PRs are welcome! Make your code readable, modular, and magical.
+
+Please follow our commit format — it helps us keep the changelog clean and maintain automation pipelines.
+
+Example:
+
+```
+feat: add avatar upload to user settings
+fix: resolve drag preview offset issue on mobile
+```
+
+---
+
+## 📜 License
+
+MIT — Feel free to use, modify, and deploy.
