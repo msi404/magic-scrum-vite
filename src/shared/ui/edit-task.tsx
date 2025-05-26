@@ -6,19 +6,17 @@ import {
 	FormField,
 	FormItem,
 	FormLabel,
-	FormMessage
-} from '@/shared/ui/form'
-import { Input } from '@/shared/ui/input'
-import { Button } from '@/shared/ui/button'
-import { DynamicDialog } from '@/shared/ui/dynamic-dialog'
-import {
+	FormMessage,
+	Input,
+	Button,
+	DynamicDialog,
 	Select,
 	SelectContent,
 	SelectItem,
 	SelectTrigger,
-	SelectValue
-} from '@/shared/ui/select'
-import { DatePicker } from '@/shared/ui/date-picker'
+	SelectValue,
+	DatePicker
+} from '@/shared/ui'
 
 export const EditTask: FC = () => {
 	const { button, onOpenChange, open, onSubmit, form, isLoading } =

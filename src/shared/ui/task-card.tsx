@@ -1,6 +1,4 @@
-import { Card, CardContent } from '@/shared/ui/card'
-import { Button } from '@/shared/ui/button'
-import { Popover, PopoverContent, PopoverTrigger } from '@/shared/ui/popover'
+import { Button,  Popover, PopoverContent, PopoverTrigger, Card, CardContent } from '@/shared/ui'
 import { useSortable } from '@dnd-kit/sortable'
 import { CSS } from '@dnd-kit/utilities'
 import { motion, AnimatePresence } from 'framer-motion'

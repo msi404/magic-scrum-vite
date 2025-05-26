@@ -12,10 +12,7 @@ import {
 import { useGetTasksQuery, useEditTaskMutation } from '@/shared/api/tasksApi'
 import { useEditTask } from '@/shared/models/use-edit-task'
 import { useDeleteTaskMutation } from '@/shared/api/tasksApi'
-import { CreateTask } from '@/shared/ui/create-task'
-import {EditTask} from '@/shared/ui/edit-task'
-import { TaskColumn } from '@/shared/ui/task-column'
-import { TaskCard } from '@/shared/ui/task-card'
+import { CreateTask, EditTask, TaskColumn, TaskCard } from '@/shared/ui';
 import { Show } from '@/shared/utils/show'
 import { For } from '@/shared/utils/for'
 type Task = {
