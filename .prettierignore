@@ -1,0 +1,18 @@
+# Build artifacts
+dist/
+node_modules/
+coverage/
+.vite/
+.cache/
+temp/
+__tmp__/
+
+# Lockfiles
+pnpm-lock.yaml
+
+# Type generation
+types_db.ts
+
+# Editor & system files
+.DS_Store
+.env*
